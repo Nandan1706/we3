@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array methods</title>
+    </head>
+    <body>
+    <button onclick="push1()">push</button>
+    <button onclick="pop1()">pop</button>
+    <button onclick="slice1()">slice</button>
+    <p id="demo"></p>
+        <script>
+            var names=["hari","ravi","charan","sam","david"]
+            document.getElementById("demo").innerHTML=names;
+            function push1(){
+            var x=names.push("hiee");
+                document.getElementById("demo").innerHTML=names+"     "+x;
+            }
+            function pop1(){
+            var x=names.pop();
+                document.getElementById("demo").innerHTML=names+"       "+x;
+            }
+            function slice1(){
+            var x=names.slice(3);
+                document.getElementById("demo").innerHTML=names+"      "+x;
+            }
+        
+        </script>
+    </body>
+</html>        
